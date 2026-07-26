@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Student Registration Form</title>
+  </head>
+  <body bgcolor="#eef6ff" text="#1a1a1a">
+    <center>
+      <table
+        border="5"
+        cellpadding="10"
+        cellspacing="0"
+        width="600"
+        bordercolor="#4a69bd"
+        bgcolor="#ffffff"
+      >
+        <tr>
+          <td>
+            <center>
+              <font face="Arial" size="6" color="#4a69bd"
+                ><b>STUDENT REGISTRATION FORM</b></font
+              ><br />
+              <font face="Arial" size="2" color="#666666"
+                >Indus University &mdash; Admission Cell</font
+              >
+            </center>
+
+            <hr color="#4a69bd" size="3" />
+
+            <form action="#" method="post">
+              <fieldset>
+                <legend>
+                  <font face="Arial" color="#4a69bd"
+                    ><b>Personal Details</b></font
+                  >
+                </legend>
+
+                <table width="100%" cellpadding="6">
+                  <tr>
+                    <td><font face="Arial">Full Name:</font></td>
+                    <td>
+                      <input type="text" name="fullname" size="30" required />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><font face="Arial">Date of Birth:</font></td>
+                    <td><input type="date" name="dob" required /></td>
+                  </tr>
+                  <tr>
+                    <td><font face="Arial">Gender:</font></td>
+                    <td>
+                      <input type="radio" name="gender" value="male" checked />
+                      Male
+                      <input type="radio" name="gender" value="female" /> Female
+                      <input type="radio" name="gender" value="other" /> Other
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><font face="Arial">Blood Group:</font></td>
+                    <td>
+                      <select name="bloodgroup">
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                      </select>
+                    </td>
+                  </tr>
+                </table>
+              </fieldset>
+
+              <br />
+
+              <fieldset>
+                <legend>
+                  <font face="Arial" color="#4a69bd"
+                    ><b>Contact Details</b></font
+                  >
+                </legend>
+
+                <table width="100%" cellpadding="6">
+                  <tr>
+                    <td><font face="Arial">Email Address:</font></td>
+                    <td>
+                      <input type="email" name="email" size="30" required />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><font face="Arial">Mobile Number:</font></td>
+                    <td>
+                      <input
+                        type="tel"
+                        name="mobile"
+                        size="30"
+                        pattern="[0-9]{10}"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><font face="Arial">Address:</font></td>
+                    <td>
+                      <textarea name="address" rows="3" cols="30"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><font face="Arial">City:</font></td>
+                    <td><input type="text" name="city" size="30" /></td>
+                  </tr>
+                </table>
+              </fieldset>
+
+              <br />
+
+              <fieldset>
+                <legend>
+                  <font face="Arial" color="#4a69bd"
+                    ><b>Academic Details</b></font
+                  >
+                </legend>
+
+                <table width="100%" cellpadding="6">
+                  <tr>
+                    <td><font face="Arial">Course:</font></td>
+                    <td>
+                      <select name="course">
+                        <option>B.Tech Computer Science Engineering</option>
+                        <option>B.Tech Information Technology</option>
+                        <option>B.Tech Mechanical Engineering</option>
+                        <option>B.Tech Civil Engineering</option>
+                        <option>BCA</option>
+                        <option>MCA</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><font face="Arial">Semester:</font></td>
+                    <td>
+                      <select name="semester">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><font face="Arial">Previous School/College:</font></td>
+                    <td>
+                      <input type="text" name="previous_institute" size="30" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><font face="Arial">Hobbies:</font></td>
+                    <td>
+                      <input type="checkbox" name="hobbies" value="sports" />
+                      Sports
+                      <input type="checkbox" name="hobbies" value="music" />
+                      Music<br />
+                      <input type="checkbox" name="hobbies" value="reading" />
+                      Reading
+                      <input type="checkbox" name="hobbies" value="coding" />
+                      Coding
+                    </td>
+                  </tr>
+                </table>
+              </fieldset>
+
+              <br />
+
+              <center>
+                <input type="submit" value="Register Now" />
+                &nbsp;&nbsp;
+                <input type="reset" value="Clear Form" />
+              </center>
+            </form>
+
+            <hr color="#4a69bd" size="3" />
+
+            <center>
+              <font face="Arial" size="1" color="#999999">
+                &copy; 2026 Indus University | All fields marked required must
+                be filled
+              </font>
+            </center>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>

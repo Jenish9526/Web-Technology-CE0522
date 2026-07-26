@@ -1,0 +1,228 @@
+:root {
+    --ink: #1c2430;
+    --ink-soft: #4a5568;
+    --accent: #1f5c4d;
+    --accent-soft: #e7efec;
+    --line: #d7dce1;
+    --bg: #ffffff;
+    --paper: #fbfbfa;
+    --font-display: "Georgia", "Iowan Old Style", "Palatino Linotype", serif;
+    --font-body: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+}
+
+.page {
+    max-width: 850px;
+    margin: 40px auto;
+    background: var(--bg);
+    padding: 56px 64px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* ---------- Header ---------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 28px;
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 20px;
+    margin-bottom: 28px;
+}
+
+.header-text h1 {
+    font-family: var(--font-display);
+    font-size: 34px;
+    letter-spacing: 0.5px;
+    margin: 0 0 4px 0;
+    color: var(--ink);
+}
+
+.header-text .role {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4px 24px;
+}
+
+.photo {
+    width: 118px;
+    height: 148px;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    flex-shrink: 0;
+    background: var(--accent-soft);
+}
+
+/* ---------- Section ---------- */
+section {
+    margin-bottom: 26px;
+}
+
+h2 {
+    font-family: var(--font-display);
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 12px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+}
+
+p {
+    margin: 6px 0;
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: var(--ink);
+}
+
+.field-label {
+    color: var(--ink-soft);
+    font-weight: 600;
+    display: inline-block;
+    min-width: 90px;
+}
+
+/* ---------- Table ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+thead td {
+    font-weight: 700;
+    background: var(--accent-soft);
+    color: var(--accent);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+td {
+    border: 1px solid var(--line);
+    padding: 9px 12px;
+    text-align: left;
+}
+
+/* ---------- Lists ---------- */
+ul.skill-list,
+ul.hobby-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+ul.skill-list li,
+ul.hobby-list li {
+    background: var(--accent-soft);
+    color: var(--accent);
+    border: 1px solid var(--line);
+    padding: 5px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* ---------- Projects ---------- */
+.project {
+    margin-bottom: 12px;
+}
+
+.project-title {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--ink);
+    margin-bottom: 2px;
+}
+
+.project-desc {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin: 0;
+}
+
+/* ---------- Declaration / Footer ---------- */
+.declaration p {
+    color: var(--ink-soft);
+}
+
+.signoff {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+
+.signoff .meta p {
+    margin: 2px 0;
+}
+
+.signature {
+    text-align: right;
+}
+
+.signature .sig-line {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 20px;
+    color: var(--accent);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+}
+
+/* ---------- Print ---------- */
+@media print {
+    body {
+        background: #fff;
+    }
+    .page {
+        box-shadow: none;
+        margin: 0;
+        padding: 24px 32px;
+        max-width: 100%;
+    }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+    .page {
+        padding: 28px 22px;
+    }
+    .header {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .contact-list {
+        grid-template-columns: 1fr;
+    }
+}
