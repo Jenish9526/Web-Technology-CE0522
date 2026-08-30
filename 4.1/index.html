@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>AngularJS Search</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <style>
+        body {
+            background: skyblue;
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input {
+            padding: 10px;
+            width: 250px;
+        }
+
+        p {
+            color: green;
+        }
+    </style>
+
+</head>
+
+<body ng-app="searchApp">
+
+    <div ng-controller="searchController">
+
+        <h2>AngularJS Search</h2>
+
+        <input type="text"
+               ng-model="searchText"
+               ng-keydown="search($event)"
+               placeholder="Enter value">
+
+        <p ng-if="result">
+            You entered: {{ result }}
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
